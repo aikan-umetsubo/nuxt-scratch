@@ -1,12 +1,12 @@
 <template>
-<div id="app">
-  <p>ToDoを一覧化し、あなたの人生を豊かにするToDoアプリケーション</p>
+<div id="ToDos">
+  <p>ToDoリスト</p>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'ToDos'
 }
 </script>
 

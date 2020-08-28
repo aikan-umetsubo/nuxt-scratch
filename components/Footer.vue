@@ -12,8 +12,9 @@ export default {
 
 <style scoped>
 #footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   padding: 1em;
+  background-color: antiquewhite;
 }
 </style>
