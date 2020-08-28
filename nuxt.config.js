@@ -1,9 +1,18 @@
-module.exports = {
+export default {
+  server: {
+    port: 3001,
+    host: 'localhost'
+  },
+
   modules: [
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
 
   axios: {
-    // proxyHeaders: false
+    proxy: true
+  },
+
+  proxy: {
+    '/api/':  'http://localhost:3000'
   }
 }

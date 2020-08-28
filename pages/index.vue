@@ -9,7 +9,6 @@
 <script>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-//import axios from '@nuxtjs/axios'
 
 export default {
   name: 'App',
@@ -17,15 +16,17 @@ export default {
     Header,
     Footer
   },
+  
   data: () => {
     return {
-      cat_fact: 'loading'
+      todos: []
     }
   },
+
   mounted: async function() {
-    const response = await this.$axios.$get('https://cat-fact.herokuapp.com/facts/random')
+    const response = await this.$axios.$get('http://localhost:3000/v1/todos')
     console.log(response);
-    this.cat_fact = response.text
+    this.todos = response.body
   }
 }
 </script>

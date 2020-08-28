@@ -10,6 +10,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding: 1em;
+}
 </style>
