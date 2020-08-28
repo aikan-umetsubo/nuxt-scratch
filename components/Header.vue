@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    ヘッダー！
+    スクラッチで作ったToDoアプリ
   </div>
 </template>
 

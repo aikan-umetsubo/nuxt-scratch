@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    フッター！
+    ここはフッター
   </div>
 </template>
 
