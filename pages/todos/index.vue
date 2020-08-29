@@ -1,12 +1,17 @@
 <template>
 <div id="ToDos">
-  <p>ToDoリスト</p>
+  <ToDoList></ToDoList>
 </div>
 </template>
 
 <script>
+import ToDoList from '@/components/ToDoList.vue'
+
 export default {
-  name: 'ToDos'
+  name: 'ToDos',
+  components: {
+    ToDoList
+  }
 }
 </script>
 

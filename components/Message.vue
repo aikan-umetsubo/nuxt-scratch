@@ -1,3 +1,17 @@
 <template>
-  <p>{{}}</p>
+  <div id="message">
+    <p> {{ text }} </p>
+  </div>
 </template>
+
+<script>
+export default {
+  props: {
+    text: String
+  }
+}
+</script>
+
+<style>
+
+</style>
