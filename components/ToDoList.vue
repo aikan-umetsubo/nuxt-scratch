@@ -48,13 +48,13 @@ export default {
       const todoId = e.target.parentNode.parentNode.id;
       console.log(todoId);
       const response = await this.$axios.$delete(
-        `http://localhost:3000/v1/todos/${todoId}`
+        `https://lit-forest-75352.herokuapp.com/v1/todos/${todoId}`
       );
       console.log(response);
       this.getTodos();
     },
     getTodos: async function() {
-      const response = await this.$axios.$get('http://localhost:3000/v1/todos')
+      const response = await this.$axios.$get('https://lit-forest-75352.herokuapp.com/v1/todos')
       console.log(response);
       this.todos = response.data
     }
