@@ -1,27 +1,27 @@
 <template>
-<div id="todos">
-  <ToDoList></ToDoList>
+<div id="todos-add">
+  <ToDoInput></ToDoInput>
 </div>
 </template>
 
 <script>
-import ToDoList from '@/components/ToDoList.vue'
+import ToDoInput from '@/components/ToDoInput.vue'
 
 export default {
-  name: 'ToDos',
+  name: 'ToDosAdd',
   components: {
-    ToDoList
+    ToDoInput
   }
 }
 </script>
 
 <style scoped>
-#todos {
+#todos-add {
   padding: 1em;
   background-color:aquamarine;
 }
 
-#todos p {
+#todos-add p {
   text-align:center;
   font:bold;
 }
