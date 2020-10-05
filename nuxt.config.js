@@ -5,7 +5,8 @@ export default {
   },
 
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
 
   axios: {
@@ -13,7 +14,10 @@ export default {
   },
 
   proxy: {
-    '/api/':  'http://localhost:3000'
+    '/api/': {
+      target: 'https://lit-forest-75352.herokuapp.com/v1/',
+      pathRewrite: {'^/api/': ''}
+    }
   },
 
   head: {

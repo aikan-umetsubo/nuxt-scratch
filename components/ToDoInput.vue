@@ -39,7 +39,7 @@ export default {
   methods: {
     addTodo: async function() {
       const response = await this.$axios.$post(
-        'https://lit-forest-75352.herokuapp.com/v1/todos',
+        '/api/todos',
         { title: this.title, body: this.body }
       );
       console.log(response);
